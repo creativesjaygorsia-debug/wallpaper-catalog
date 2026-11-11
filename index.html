@@ -113,7 +113,7 @@ function home(){
 }
 function detail(m){
  const hero=m.hero||U(m.i[0]);
- let h=`<div class="wrap d-top"><a class="back" href="#">← The Collection</a><div class="tag">BESPOKE<small>WALLCOVERINGS</small></div><h4>Mural</h4><h1>${up(m.n)}</h1><img class="d-hero" alt="${m.n}" src="${hero}"><p class="d-desc">${m.d}</p>`;
+ let h=`<div class="wrap d-top"><a class="back" href="javascript:void(0)" onclick="location.hash=''">← The Collection</a><div class="tag">BESPOKE<small>WALLCOVERINGS</small></div><h4>Mural</h4><h1>${up(m.n)}</h1><img class="d-hero" alt="${m.n}" src="${hero}"><p class="d-desc">${m.d}</p>`;
  if(m.sw)h+=`<div class="sw"><div class="crop l"><img alt="" style="height:120.65%;left:-85.94%;top:-10.33%;width:350.09%" src="${m.sw[0]}"></div><div><p>${m.cap}</p><div class="crop r"><img alt="" style="height:100.49%;left:0;top:-.25%;width:250.94%" src="${m.sw[1]}"></div></div></div>`;
  if(m.cw)h+=m.cw.map((x,k)=>`<div class="cw"><img loading="lazy" alt="" src="${x}"><p>${m.n}${m.w[k]?' - '+m.w[k].toLowerCase():''}</p></div>`).join('');
  else h+=`<div class="chips">${m.w.map(x=>`<span>${m.n}${x?' - '+x:''}</span>`).join('')}</div>`;
