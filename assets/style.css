@@ -1,5 +1,5 @@
 *{box-sizing:border-box;margin:0;padding:0}
-:root{--side:#e9e9e8;--page-max:1200px}
+:root{--side:#fff;--page-max:1200px}
 html,body{background:var(--side)}
 body{color:#000;font-family:'Montserrat',sans-serif;font-weight:400;-webkit-font-smoothing:antialiased}
 a{color:inherit}
